@@ -11,7 +11,10 @@ describe('API TESTING' , () => {
         .then ( (response) => {
             cy.log (JSON.stringify(response))
             expect (response.status).to.eq(200)
-        })
+            expect (response.body).to.have.length(10)
+            expect (response.body[0]).to.have.property("name","Arindam Patil Esq.")
+            expect (response.body[0]).to.not.have.property("address")
+                    })
     
 })
 })
