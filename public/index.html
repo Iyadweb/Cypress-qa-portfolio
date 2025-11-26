@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Monce AI | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="logo">
+        <span class="dot"></span>
+        <span class="word">Monce</span>
+      </div>
+      <p class="tagline">
+        AI-powered order management for modern manufacturing teams.
+      </p>
+    </header>
+
+    <main class="contact-shell">
+      <section class="contact-copy">
+        <p class="eyebrow">Contact</p>
+        <h1>Let’s build an intelligent supply chain together.</h1>
+        <p>
+          Tell us about your production volume, ERP stack, and the workflows that slow your teams down today.
+          We’ll respond within one business day with a tailored roadmap.
+        </p>
+        <ul>
+          <li>Response in under 24 hours</li>
+          <li>Enterprise-ready with SOC2 controls</li>
+          <li>Live pilots in <span class="highlight">less than 3 weeks</span></li>
+        </ul>
+        <div class="footer-links">
+          <div>
+            <p class="footer-heading">Entreprise</p>
+            <a href="#">À propos</a>
+            <a href="#">Carrières</a>
+            <a href="#">Politique de confidentialité</a>
+          </div>
+          <div>
+            <p class="footer-heading">Social</p>
+            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-card">
+        <form id="contact-form" novalidate>
+          <div class="form-header">
+            <h2>Share your roadmap</h2>
+            <p>All fields marked * are required.</p>
+          </div>
+
+          <label>
+            <span>Full name *</span>
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+
+          <label>
+            <span>Work email *</span>
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+
+          <label>
+            <span>Company</span>
+            <input type="text" name="company" autocomplete="organization" />
+          </label>
+
+          <label>
+            <span>Phone</span>
+            <input type="tel" name="phone" autocomplete="tel" />
+          </label>
+
+          <label>
+            <span>Project type</span>
+            <select name="projectType">
+              <option value="">Select</option>
+              <option value="Order digitization">Order digitization</option>
+              <option value="Forecasting">Forecasting</option>
+              <option value="Co-pilot for ops">Co-pilot for ops</option>
+              <option value="Custom">Custom</option>
+            </select>
+          </label>
+
+          <label>
+            <span>How can we help? *</span>
+            <textarea name="message" rows="5" placeholder="Share your current workflow, KPIs, and desired outcomes."
+              required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="primary">Send message</button>
+            <p class="muted">By submitting, you agree to our privacy policy.</p>
+          </div>
+
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="./app.js" type="module"></script>
+</body>
+
+</html>
